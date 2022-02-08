@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container::after,
+.container::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col33{
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col50{
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col25{
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col20{
+    width: 20%;
+    float: left;
+    padding: 0 15px;
+}
+
+i{
+    color: #02918c;
+    font-size: 25px;
+}
+
+
+/* common section title part start */
+
+.section_heading h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+}
+
+.section_heading p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 41px;
+}
+
+.section_heading p span{
+    font-size: 23px;
+    font-weight: 800;
+    color: #7e8287;
+    /* line-height: 41px; */
+}
+
+/* common section title part end */
+
+
+/* header part css start */
+
+.header{
+    background-color: #02918c;
+}
+
+.logo{
+    float: left;
+    padding-top: 35px;
+}
+
+.menu{
+    float: right;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 15px;
+}
+
+.menu ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* header part css end */
+
+
+/* banner part css start */
+
+.banner{
+    background-image: url(media/banner.jpg);
+    height: 750px;
+    background-size: cover;
+}
+
+.banner_content{
+    text-align: center;
+    color: #fff;
+}
+
+.b_text h2{
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+.b_text h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    display: inline;
+}
+
+.b_text p{
+    font-size: 18px;
+}
+
+.b_img{
+    margin: 50px;
+}
+
+.s_btn,
+.b_btn a{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 20px 25px;
+    background-color: #cfc91d;
+    display: inline-block;
+}
+
+
+/* banner part css end */
+
+
+/* about part css start */
+
+.about .section_heading{
+    text-align: center;
+}
+
+.about .section_heading h2{
+    margin: 100px 0 30px 0;
+}
+
+.about .section_heading p{
+    margin-bottom: 80px;
+}
+
+.about_items{
+    text-align: center;
+}
+
+.about_items .col25{
+    border-right: 1px solid #d9dbdb;
+    color: #7e8287;
+    padding: 40px 30px;
+}
+
+.about_items .col25:last-child{
+    border: none;
+}
+
+/* about part css end */
+
+
+/* services part css start */
+
+.services{
+    margin-top: 100px;
+    background-image: url(media/services.jpg);
+    height: 750px;
+    background-size: cover;
+}
+
+.services_items .col50{
+    padding: 30px;
+}
+
+/* services part css end */
+
+
+/* my work part css start */
+
+.work{
+    margin-top: 50px;
+}
+
+.work .section_heading{
+    text-align: center;
+}
+
+.cards .col25{
+    position: relative;
+    padding: 15px;
+}
+
+.cards .col25 img{
+    width: 100%;
+    display: block;
+}
+
+.cards .col25 .overlay{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    text-align: center;
+    background: rgba(2,145,140,.85);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.cards .col25:hover .overlay{
+    opacity: 1;
+}
+
+
+/* my work part css end */
+
+
+/* contact part css start */
+
+.contact .section_heading{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact_form{
+    background: #0b0b0b;
+    margin: 95px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.input_items_one{
+    width: 640px;
+    margin: auto;
+}
+
+.form_control{
+    height: 45px;
+    background: none;
+    width: 100%;
+    text-align: center;
+    color: #7e8287;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+}
+
+.form_control:focus{
+    outline: none;
+}
+
+.input_items_two{
+    width: 640px;
+    margin: auto;
+    padding-top: 65px;
+    margin-bottom: 60px;
+}
+
+.input_textarea{
+    width: 915px;
+    margin: auto;
+    /* padding-top: 55px; */
+    /* margin-bottom: 30px; */
+}
+
+.input_textarea textarea{
+    height: 100px;
+    resize: none;
+    border-top: 1px solid #7e8287;
+}
+
+.input_textarea label{
+    color: #7e8287;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.s_btn{
+    margin: 40px 0;
+}
+
+/* contact part css end */
+
+
+/* footer part css start */
+
+.footer{
+    text-align: center;
+    background-color: #000;
+}
+
+.f_text{
+    color: #fff;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.f_text i{
+    font-size: 25px;
+    color: #FF0000;
+}
+
+/* footer part css end */
